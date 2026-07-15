@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<style>
+    #game {
+
+width: 280px; height: 160px;
+
+position: relative;
+
+}
+
+#timer {
+
+ position: absolute;
+
+ top: 8px; right: 8px;
+
+ font-weight: bold;
+
+}
+
+#star { position: absolute; cursor: pointer; }
+</style>
+<body>
+
+ <div id="score">Score: 0</div>
+
+ <div id="game">
+
+ <div id="timer">10</div>
+
+ <div id="star">⭐</div>
+
+ </div>
+
+ <script src="">
+    let x=50, y=50, dx=3, dy=2;
+
+let score=0, time=10;
+
+
+
+const countdown = setInterval(() => {
+
+ time--;
+
+ if(time <= 0) endGame();
+
+}, 1000);
+
+
+
+star.onclick = () => score++;
+
+setInterval(move, 30);
+</script>
+
+</body>

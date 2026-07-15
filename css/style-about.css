@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f3f57; /* dark blue */
+  padding: 10px 40px;
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 0 40px;
+  min-height: 65px;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 5px;
+}
+
+.title h1 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.title p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 90px;
+}
+
+.nav-links span {
+  color: #ccc;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Glow + color shift */
+.nav-links a:hover {
+  color: #5dade2;
+  text-shadow: 0 0 5px rgba(93, 173, 226, 0.7),
+               0 0 10px rgba(93, 173, 226, 0.5);
+  transform: translateY(-2px);
+}
+/* Animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #5dade2;
+  box-shadow: 0 0 8px #5dade2;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+    /* HERO SECTION */
+    .hero{
+        width: 100%;
+        height: 490px; /* smaller height */
+        position: relative;
+
+        background: url('../images/img1.jpg') center center/cover no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* Overlay */
+    .hero::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      /* Dark overlay */
+      background: rgba(0, 0, 0, 0.45);
+
+      /* Optional blur glass effect */
+      backdrop-filter: blur(2px);
+    }
+
+    /* Content */
+    .hero-content{
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1{
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .breadcrumb a,
+    .breadcrumb span,
+    .breadcrumb p{
+        font-size: 14px;
+    }
+
+    .breadcrumb{
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb a{
+      text-decoration: none;
+      color: #4a7ca2;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .breadcrumb a:hover{
+      color: white;
+    }
+
+    .breadcrumb span{
+      color: white;
+    }
+
+    .breadcrumb p{
+      color: white;
+    }
+
+.about-section{
+    width:75%;
+    max-width:1400px;
+    margin:100px auto;
+    background-color: #ffffff;
+}
+
+/* TOP */
+.about-top{
+    display:inline-block;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom:60px;
+}
+
+.about-top h2{
+    font-size:34px;
+    font-weight:500;
+    text-align:center;
+
+    line-height:1.3;
+
+    color:#111;
+}
+
+.about-top h1{
+    font-size:15px;
+    font-weight:400;
+    text-align:center;
+
+    line-height:1.3;
+
+    color:#111;
+}
+.about-row{
+    display:grid;
+    grid-template-columns:480px 1px 1fr;
+    gap:40px;
+    align-items:start;
+    margin-bottom:60px;
+}
+
+.about-divider{
+    width:2px;
+    background:linear-gradient(
+        transparent,
+        #d9d9d9 15%,
+        #d9d9d9 85%,
+        transparent
+    );
+}
+
+.about-row.reverse{
+    grid-template-columns:1fr 1px 480px;
+}
+
+.about-row.reverse .about-image{
+    order:3;
+}
+
+.about-row.reverse .about-divider{
+    order:2;
+}
+
+.about-row.reverse .about-content{
+    order:1;
+}
+
+/* Image */
+.about-image{
+    width:100%;
+}
+
+.about-image img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* Text */
+.about-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.about-content h2{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:18px;
+    color:#222;
+}
+
+.about-content p{
+    font-size:1rem;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:40px;
+}
+
+.gallery-nav{
+
+    margin-top:25px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.thumbnail{
+
+    width:75px;
+    height:75px;
+
+    border-radius:10px;
+    object-fit:cover;
+
+    cursor:pointer;
+
+    border:3px solid transparent;
+
+    transition:.3s;
+
+    flex-shrink:0;
+}
+
+.thumbnail:hover{
+
+    transform:scale(1.05);
+}
+
+.thumbnail.active{
+
+    border-color:#0d6efd;
+}
+
+.thumbnail-container{
+    width:415px;      /* 5 thumbnails */
+    overflow:hidden;
+}
+
+.thumbnail-track{
+
+    display:grid;
+
+    grid-auto-flow:column;
+
+    grid-auto-columns:75px;
+
+    gap:10px;
+}
+
+.thumb-btn{
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#0d6efd;
+    color:#fff;
+
+    cursor:pointer;
+}
+
+.organization{
+    background:#ffffff;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:100px;
+  }
+
+  .organization-section{
+    display:grid;
+    grid-template-columns:3fr 2fr;   /* 60 / 40 */
+    gap:0px;
+}
+
+.organization-left,
+.organization-right{
+    padding:0px 100px;
+}
+
+@media (max-width:991px){
+
+    .organization-section{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.organization-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:220px;
+    height:220px;
+    background:url(../images/islamic-pattern.png);
+    opacity:.15;
+}
+
+.organization-section::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:220px;
+    height:220px;
+    background:url(../images/islamic-pattern.png);
+    opacity:.15;
+}
+
+.organization-left{
+    padding-right:50px;
+}
+
+.organization-right{
+    padding-left:50px;
+}
+
+.org-title{
+    text-align:center;
+    padding:50px 0 30px;
+}
+
+.org-head-title{
+    text-align:center;
+    padding:10px 0 5px;
+}
+
+.org-head-title h2{
+    font-size:20px;
+    font-weight:500;
+    color:#111;
+}
+
+.org-card{
+    width:180px;
+    text-align:center;
+}
+
+.org-photo{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    padding:6px;
+    background:#fff;
+    border:6px solid #f3b27c;
+    box-shadow:0 0 0 3px #eee;
+}
+
+.level{
+    display:flex;
+    justify-content:center;
+    margin:10px 0;
+}
+
+.level.two{
+    gap:160px;
+}
+
+.level.three{
+    gap:320px;
+}
+
+.org-photo img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.org-info{
+    margin-top:15px;
+    padding:12px;
+    border-radius:12px;
+    background:#a6d7f7;
+}
+
+.org-info h4{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.org-info span{
+    color:#555;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.org-wrapper{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:80px;
+}
+
+.connector.vertical{
+    width:3px;
+    height:60px;
+    background:#555;
+    margin:auto;
+}
+
+.connector.horizontal{
+    width:330px;
+    height:3px;
+    background:#555;
+    margin:auto;
+}
+
+.connector.horizontalv2{
+    width:500px;
+    height:3px;
+    background:#555;
+    margin:auto;
+}
+
+/* Responsive */
+@media (max-width:992px){
+
+    .about-row,
+    .about-row.reverse{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .about-row.reverse .about-image,
+    .about-row.reverse .about-content{
+        order:initial;
+    }
+
+    .about-image img{
+        height:260px;
+    }
+}
+
+    /* Responsive */
+    @media(max-width:768px){
+
+        .hero{
+            height: 180px;
+        }
+
+        .hero-content h1{
+            font-size: 38px;
+        }
+
+        .breadcrumb a,
+        .breadcrumb span,
+        .breadcrumb p{
+            font-size: 15px;
+        }
+    }
+
+    @media(max-width:480px){
+
+      .hero-content h1{
+        font-size: 42px;
+      }
+
+      .breadcrumb a,
+      .breadcrumb span,
+      .breadcrumb p{
+        font-size: 16px;
+      }
+    }
+
+ .quotes {
+    padding: 60px;
+    text-align: center;
+    background: url('https://www.transparenttextures.com/patterns/black-thread.png');
+    font-style: italic;
+    color: black;
+  }
+
+  .gallery-slider {
+  width: 100%;
+  overflow: hidden;
+  background: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  padding: 10px 0;
+  position: relative;
+}
+
+/* Moving Track */
+.slider-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scrollSlider 25s linear infinite;
+}
+
+/* Pause on hover */
+.gallery-slider:hover .slider-track {
+  animation-play-state: paused;
+}
+
+/* Each Slide */
+.slider {
+  width: 250px;
+  height: 160px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+/* Image */
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+/* Hover Zoom */
+.slider:hover img {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* Overlay */
+.slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.25);
+
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.slider:hover::before {
+  background: rgba(0,0,0,0.05);
+}
+
+/* Infinite Auto Slide */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+
+
+.footer {
+  background: #0d2b3f;
+  color: white;
+  padding: 50px 60px 20px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.footer-section p {
+  line-height: 1.8;
+  font-size: 12px;
+  color: #f1f1f1;
+}
+
+.akta {
+  margin-top: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 18px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: fit-content;
+  font-size: 14px;
+}
+
+/* Hover Glow Effect */
+.links a:hover {
+  color: #5dade2;
+  text-shadow: 0 0 5px rgba(93, 173, 226, 0.7),
+               0 0 10px rgba(93, 173, 226, 0.5);
+  transform: translateX(5px);
+}
+
+/* Animated underline */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #5dade2;
+  box-shadow: 0 0 8px #5dade2;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Social Hover */
+.social-icons a:hover {
+  color: #5dade2;
+  transform: scale(1.15);
+  text-shadow: 0 0 10px rgba(93, 173, 226, 0.8);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #ddd;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #1f3f57;
+  color: white;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  z-index: 9999;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Hover Effect */
+.scroll-top:hover {
+  background: #5dade2;
+  transform: translateY(-5px) scale(1.08);
+
+  box-shadow:
+    0 0 10px rgba(93,173,226,0.6),
+    0 0 20px rgba(93,173,226,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 40px 30px 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+}
