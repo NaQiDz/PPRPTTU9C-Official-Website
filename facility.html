@@ -14,15 +14,22 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="navbar">
+    <header class="navbar" id="top">
+
         <div class="logo-section">
             <img src="images/logo.png" alt="Logo" class="logo">
+
             <div class="title">
-            <!-- <h1>Perbadanan Pengurusan Rumah</h1> -->
-            <p>Perbadanan Pengurusan Rumah<br>Pangsa Taman Tasik Utama<br>Fasa 9C</p>
+                <p>
+                    Perbadanan Pengurusan Rumah<br>
+                    Pangsa Taman Tasik Utama<br>
+                    Fasa 9C
+                </p>
             </div>
         </div>
 
+
+        <!-- Desktop Navigation -->
         <nav class="nav-links">
             <a href="index.html">Laman Utama</a>
             <span>|</span>
@@ -30,8 +37,41 @@
             <span>|</span>
             <a href="about.html">Tentang Kami</a>
             <span>|</span>
-            <a href="contact.html"><i class="fa-solid fa-phone"></i> Hubungi Kami</a>
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i> Hubungi Kami
+            </a>
         </nav>
+
+
+        <!-- Burger Menu -->
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- Mobile Sidebar -->
+        <div class="sidebar" id="sidebar">
+
+            <a href="index.html">
+                Laman Utama
+            </a>
+
+            <a href="facility.html">
+                Kemudahan
+            </a>
+
+            <a href="about.html">
+                Tentang Kami
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i> Hubungi Kami
+            </a>
+
+        </div>
+
     </header>
 
     <section class="hero">
@@ -64,10 +104,11 @@
             dan berkualiti untuk anda
         </h2>
 
-        <button class="see-more-btn">
-            Lihat Lebih Lanjut
-        </button>
-
+        <div class="btnmore">
+            <button class="see-more-btn">
+                Lihat Lebih Lanjut
+            </button>
+        </div>
     </div>
 
     <!-- =========================================

@@ -759,7 +759,7 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
   .management-section {
     flex-direction: column;
   }
@@ -774,15 +774,19 @@ body {
   }
 
   .content-box h1 {
-    font-size: 42px;
+    font-size: 30px;
   }
 
   .content-box p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .management-image {
-    height: 500px;
+    height: 400px;
+  }
+  .btnmore {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1023,7 +1027,21 @@ body {
   }
 
   .footer-section h3 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .social-icons a {
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease;
   }
 }
 
