@@ -15,15 +15,22 @@
 <body>
     <script src="javascript/function.js"></script>
     <!-- Header -->
-    <header class="navbar">
+    <header class="navbar" id="top">
+
         <div class="logo-section">
             <img src="images/logo.png" alt="Logo" class="logo">
+
             <div class="title">
-            <!-- <h1>Perbadanan Pengurusan Rumah</h1> -->
-            <p>Perbadanan Pengurusan Rumah<br>Pangsa Taman Tasik Utama<br>Fasa 9C</p>
+                <p>
+                    Perbadanan Pengurusan Rumah<br>
+                    Pangsa Taman Tasik Utama<br>
+                    Fasa 9C
+                </p>
             </div>
         </div>
 
+
+        <!-- Desktop Navigation -->
         <nav class="nav-links">
             <a href="index.html">Laman Utama</a>
             <span>|</span>
@@ -31,8 +38,41 @@
             <span>|</span>
             <a href="about.html">Tentang Kami</a>
             <span>|</span>
-            <a href="contact.html"><i class="fa-solid fa-phone"></i> Hubungi Kami</a>
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i> Hubungi Kami
+            </a>
         </nav>
+
+
+        <!-- Burger Menu -->
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- Mobile Sidebar -->
+        <div class="sidebar" id="sidebar">
+
+            <a href="index.html">
+                Laman Utama
+            </a>
+
+            <a href="facility.html">
+                Kemudahan
+            </a>
+
+            <a href="about.html">
+                Tentang Kami
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i> Hubungi Kami
+            </a>
+
+        </div>
+
     </header>
 
     <section class="hero">
@@ -72,10 +112,6 @@
             <br>
             Senarai Aktiviti dan Program yang dianjurkan oleh Perbadanan Pengurusan Rumah Pangsa Taman Tasik Utama Fasa 9C dan badan persatuan lain yg terlibat.
         </h1>
-
-        <!-- <button class="see-more-btn">
-            Lihat Lebih Lanjut
-        </button> -->
 
     </div>
 
@@ -170,214 +206,214 @@
 
 </section>
 
-<section class="gallery-slider">
+    <section class="gallery-slider">
 
-  <div class="slider-track">
+        <div class="slider-track">
 
-    <!-- Images -->
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img2.png" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img3.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img2.png" alt="">
-    </div>
-
-    <!-- DUPLICATE FOR INFINITE LOOP -->
-    <div class="slider">
-      <img src="images/img3.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img2.png" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img3.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-    <!-- DUPLICATE FOR INFINITE LOOP -->
-    <div class="slider">
-      <img src="images/img3.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img2.png" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img3.jpg" alt="">
-    </div>
-
-    <div class="slider">
-      <img src="images/img1.jpg" alt="">
-    </div>
-
-  </div>
-
-</section>
-
-<section class="organization">
-
-    <!-- Title -->
-    <div class="org-title">
-        <h2>Carta Organisasi</h2>
-        <p>Perbadanan Pengurusan Rumah Pangsa Taman Tasik Utama 9C</p>
-    </div>
-
-    <!-- 60 / 40 Grid -->
-    <div class="organization-section">
-
-        <!-- LEFT (60%) -->
-        <div class="organization-left">
-
-            <div class="org-head-title">
-                <h2>Badan Pentadbiran</h2>
+            <!-- Images -->
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
             </div>
 
-            <!-- Chairman -->
-            <div class="level">
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
-
-                    <div class="org-info">
-                        <h4>Mohd Hakim B. Abdul Hamid</h4>
-                        <span>Pengerusi</span>
-                    </div>
-                </div>
+            <div class="slider">
+            <img src="images/img2.png" alt="">
             </div>
 
-            <div class="connector vertical"></div>
-            <div class="connector horizontal"></div>
-
-            <!-- Secretary & Treasurer -->
-            <div class="level two">
-
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
-
-                    <div class="org-info">
-                        <h4>Mohd Najmi Bin Jaafar</h4>
-                        <span>Setiausaha</span>
-                    </div>
-                </div>
-
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
-
-                    <div class="org-info">
-                        <h4>Muttmainnah Binti Nazari</h4>
-                        <span>Bendahari</span>
-                    </div>
-                </div>
-
+            <div class="slider">
+            <img src="images/img3.jpg" alt="">
             </div>
 
-            <div class="connector vertical"></div>
-            <div class="connector horizontalv2"></div>
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
+            </div>
 
-            <!-- Committee -->
-            <div class="level three">
+            <div class="slider">
+            <img src="images/img2.png" alt="">
+            </div>
 
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
+            <!-- DUPLICATE FOR INFINITE LOOP -->
+            <div class="slider">
+            <img src="images/img3.jpg" alt="">
+            </div>
 
-                    <div class="org-info">
-                        <h4>Hassan Bin Wahid</h4>
-                        <span>Ahli Biasa</span>
-                    </div>
-                </div>
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
+            </div>
 
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
+            <div class="slider">
+            <img src="images/img2.png" alt="">
+            </div>
 
-                    <div class="org-info">
-                        <h4>Zaileme Binti Abd Karim</h4>
-                        <span>Ahli Biasa</span>
-                    </div>
-                </div>
+            <div class="slider">
+            <img src="images/img3.jpg" alt="">
+            </div>
 
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
+            </div>
+
+            <!-- DUPLICATE FOR INFINITE LOOP -->
+            <div class="slider">
+            <img src="images/img3.jpg" alt="">
+            </div>
+
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
+            </div>
+
+            <div class="slider">
+            <img src="images/img2.png" alt="">
+            </div>
+
+            <div class="slider">
+            <img src="images/img3.jpg" alt="">
+            </div>
+
+            <div class="slider">
+            <img src="images/img1.jpg" alt="">
             </div>
 
         </div>
-        <!-- END organization-left -->
 
+    </section>
 
-        <!-- RIGHT (40%) -->
-        <div class="organization-right">
+    <section class="organization">
 
-            <div class="org-head-title">
-                <h2>Badan Pengurusan</h2>
-            </div>
+        <!-- Title -->
+        <div class="org-title">
+            <h2>Carta Organisasi</h2>
+            <p>Perbadanan Pengurusan Rumah Pangsa Taman Tasik Utama 9C</p>
+        </div>
 
-            <div class="level">
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
-                    </div>
+        <!-- 60 / 40 Grid -->
+        <div class="organization-section">
 
-                    <div class="org-info">
-                        <h4>Zanliah Binti Ahmad</h4>
-                        <span>Kerani Pentadbiran</span>
+            <!-- LEFT (60%) -->
+            <div class="organization-left">
+
+                <div class="org-head-title">
+                    <h2>Badan Pentadbiran</h2>
+                </div>
+
+                <!-- Chairman -->
+                <div class="level">
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Mohd Hakim B. Abdul Hamid</h4>
+                            <span>Pengerusi</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="connector vertical"></div>
+                <div class="connector vertical"></div>
+                <div class="connector horizontal"></div>
 
-            <div class="level two">
-                <div class="org-card">
-                    <div class="org-photo">
-                        <img src="images/no-profile.png" alt="">
+                <!-- Secretary & Treasurer -->
+                <div class="level two">
+
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Mohd Najmi Bin Jaafar</h4>
+                            <span>Setiausaha</span>
+                        </div>
                     </div>
 
-                    <div class="org-info">
-                        <h4>Norhisam Bin Md Yusof</h4>
-                        <span>Juruteknik</span>
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Muttmainnah Binti Nazari</h4>
+                            <span>Bendahari</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="connector vertical"></div>
+                <div class="connector horizontalv2"></div>
+
+                <!-- Committee -->
+                <div class="level three">
+
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Hassan Bin Wahid</h4>
+                            <span>Ahli Biasa</span>
+                        </div>
+                    </div>
+
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Zaileme Binti Abd Karim</h4>
+                            <span>Ahli Biasa</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- END organization-left -->
+
+
+            <!-- RIGHT (40%) -->
+            <div class="organization-right">
+
+                <div class="org-head-title">
+                    <h2>Badan Pengurusan</h2>
+                </div>
+
+                <div class="level">
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Zanliah Binti Ahmad</h4>
+                            <span>Kerani Pentadbiran</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="connector vertical"></div>
+
+                <div class="level two">
+                    <div class="org-card">
+                        <div class="org-photo">
+                            <img src="images/no-profile.png" alt="">
+                        </div>
+
+                        <div class="org-info">
+                            <h4>Norhisam Bin Md Yusof</h4>
+                            <span>Juruteknik</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <!-- END organization-right -->
 
         </div>
-        <!-- END organization-right -->
 
-    </div>
-
-</section>
+    </section>
 
     <!-- Footer -->
   <footer class="footer">
