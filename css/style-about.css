@@ -686,7 +686,7 @@
 
   .organization-left,
   .organization-right{
-      padding:0px 100px;
+      padding:0px 50px;
   }
 
   @media (max-width:991px){
@@ -720,11 +720,11 @@
   }
 
   .organization-left{
-      padding-right:50px;
+      padding-right:30px;
   }
 
   .organization-right{
-      padding-left:50px;
+      padding-left:30px;
   }
 
   .org-title{
@@ -766,7 +766,7 @@
   }
 
   .level.two{
-      gap:160px;
+      gap:70px;
   }
 
   .level.three{
@@ -806,13 +806,13 @@
 
   .connector.vertical{
       width:3px;
-      height:60px;
+      height:40px;
       background:#555;
       margin:auto;
   }
 
   .connector.horizontal{
-      width:330px;
+      width:250px;
       height:3px;
       background:#555;
       margin:auto;

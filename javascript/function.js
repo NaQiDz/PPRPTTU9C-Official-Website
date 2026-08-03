@@ -52,6 +52,15 @@ document.querySelectorAll(
   observer.observe(el);
 });
 
+const map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+        lat: 2.267625,
+        lng: 102.279322
+    },
+    zoom: 19,
+    mapTypeId: "hybrid"
+});
+
 /* =========================================
    SCROLL SHOW ANIMATION
 ========================================= */
